@@ -69,9 +69,8 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 40%;
   padding: 50px 0;
-  margin: 100px 0;
+  margin: 100px auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgb(38 38 38 / 20%);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -155,6 +154,26 @@ body::-webkit-scrollbar {
 .grid-1:hover, .grid-2:hover, .grid-3:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 10px rgb(38 38 38 / 5%), 0 20px 40px rgb(38 38 38 / 20%);
+}
+
+@media (max-width: 1000px) {
+  .section-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section-grid {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+    padding: 0 50px;
+  }
 }
 
 .ccontainer {
