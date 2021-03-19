@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="Index">
+	<title>Matias' Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" href="wp-content\images\assets\img\brand\favicon.ico" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+	 crossorigin="anonymous">
+	</script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+    (function(){
+      emailjs.init("user_6Z3mCm9NiTNUQqYhMfV8E");
+    })();
+</script>
+</head>
+<body id="all">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Matias' Portfolio</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="index.html">Página principal</a>
+         </li>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+             <li><a class="dropdown-item" href="#">D'grafix</a></li>
+             <li><a class="dropdown-item" href="projects/projects.html">Ver todos <i class="bi bi-caret-right-fill"></i></a></li>
+           </ul>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="aboutme.html">Sobre mí</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="contact.html">Contacto</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="search.html">Buscar</a>
+        </li>
+       </ul>
+       <div class="d-flex">
+        <input class="form-control me-2" id="input" type="search" placeholder="Busca algo..." aria-label="Search">
+        <a href="#" class="btn btn-outline-success" role="button" id="btnFormSubmit">Buscar</a>
+       </div>
+    </div>
+     </div>
+   </div>
+ </nav>
+ <div>
+ <ul id="resultado">
+ 
+</ul>
+</div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+  <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto"><i class="bi bi-info-circle"></i> Recordatorio</strong>
+      <small>justo ahora</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      <i class="bi bi-info-circle"></i> Para ver la página optimizada, usa Chrome v60 en adelante, Firefox v60 en adelante, iOS 10 en adelante, Safari v10 en adelante, y Android 6 en adelante. La página no funciona correctamente en Internet Explorer.
+    </div>
+  </div>
+</div>
+    <div class="presentation-section">
+    <div class="ccontainer">
+        <h2 class="object" data-value="3">Matias'<br><span>portfolio</span></h2>
+        <img src="wp-content/images/assets/img/parallax-img/firefox.png" class="object" data-value="-2">
+        <img src="wp-content/images/assets/img/parallax-img/safari.png" class="object" data-value="6">
+        <img src="wp-content/images/assets/img/parallax-img/vs.png" class="object" data-value="4">
+        <img src="wp-content/images/assets/img/parallax-img/chrome.png" class="object" data-value="-6">
+        <img src="wp-content/images/assets/img/parallax-img/edge.png" class="object" data-value="8">
+        <img src="wp-content/images/assets/img/parallax-img/html.png" class="object" data-value="-4">
+        <img src="wp-content/images/assets/img/parallax-img/js.png" class="object" data-value="5">
+    </div>
+    </div>
+   <section class="section-1">
+      <p class="section-text lead"><b>Hola!</b><br> Bienvenido a mi portafolio. Aquí encontrarás todos mis trabajos. Estoy especializado en el front-end y me gusta crear cosas sencillas, pero que vayan al grano. Si me deseas contactar, puedes ir a la página <a href="#" class="section-link lead">Contacto</a>.</p>
+   </section>
+   <section class="section-grid">
+       <div class="grid-1">
+          <img src="wp-content/images/assets/img/banners/file-alt-regular.svg" alt="File" style="width: 150px;height: 150px;" class="section-grid-img">
+          <p class="section-grid-text-1">Las páginas que diseño son con una temática sencilla y minimalista. Siempre veo cómo hacerla de una manera con la que la página se vea fresca.</p>
+       </div>
+       <div class="grid-2">
+         <img src="wp-content/images/assets/img/banners/cloud-solid.svg" alt="File" style="width: 150px;height: 150px;" class="section-grid-img">
+         <p class="section-grid-text-2">Las páginas que diseño son con una temática sencilla y minimalista. Siempre veo cómo hacerla de una manera con la que la página se vea fresca.</p>
+      </div>
+      <div class="grid-3">
+         <img src="wp-content/images/assets/img/banners/hdd-regular.svg" alt="File" style="width: 150px;height: 150px;" class="section-grid-img">
+          <p class="section-grid-text-3">Las páginas que diseño son con una temática sencilla y minimalista. Siempre veo cómo hacerla de una manera con la que la página se vea fresca.</p>
+      </div>
+   </section>
+   <center>
+    <div class="newsletter">
+         <h3 class="newsletter-text">Suscríbete a nuestro newsletter!</h3>
+         <label for="email">Nombre:</label>
+         <input type="text" name="name" class="name" placeholder="Nombre">
+         <label for="email">Correo:</label>
+         <input type="email" name="email" class="email formv" placeholder="Correo electrónico">
+         <input type="submit" name="button" class="submit form">
+</div>
+   </center>
+  <footer>
+   <ul class="nav justify-content-center" style="background:#cccccc;">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Página principal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/projects/projects.html">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutme.html">Sobre mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contacto</a>
+      </li>
+    </ul>
+     <small class="footer-text" style="text-align:center;"><img class="nav-brand-footer" src="wp-content/images/assets/img/brand/portfolio-logo.svg" alt="Portfolio Logo"></img> - © 2021 - Esta página tiene la <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="cc-link" target="_blank">licencia de Creative Commons BY-SA 3.0</a>, lo que significa que puedes publicar y remezclar mi contenido.</small>
+   </footer>
+   <script src="main.js"></script>
+   <script src="js/app.js"></script>
+   <script src="plugins/particles.js"></script>
+   <script src="plugins/app.js"></script>
+</body>
+</html>
