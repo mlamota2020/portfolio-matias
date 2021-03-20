@@ -29,12 +29,19 @@
            <a class="nav-link" href="index.html">Página principal</a>
          </li>
          <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
-           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-             <li><a class="dropdown-item" href="#">D'grafix</a></li>
-             <li><a class="dropdown-item" href="projects/projects.html">Ver todos <i class="bi bi-caret-right-fill"></i></a></li>
+          <div class="btn-group dropend">
+           <a class="nav-link" href="projects/projects.html">
+             Proyectos
+           </a>
+           <a type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+             <span class="visually-hidden">Toggle Dropright</span>
+           </a>
+            <ul class="dropdown-menu">
+             <li><a class="nav-link active" href="projects/dgrafix.html">D'grafix</a></li>
+             <li><a class="nav-link active" href="projects/projects.html">Ver todos <i class="bi bi-chevron-double-right"></i></a></li>
            </ul>
-         </li>
+          </div>
+        </li>
          <li class="nav-item">
            <a class="nav-link" href="aboutme.html">Sobre mí</a>
          </li>
@@ -51,8 +58,7 @@
    <div class="container mt-5" id="formContainer">
        <h1 class="display-3 my-5">Inserte su búsqueda:</h1>
        <input type="text" class="form-control" placeholder="Búsqueda" id="input">
-       <small style="color: #cccccc;-webkit-user-select: none;
-       -moz-user-select: none;-khtml-user-select: none;-ms-user-select:none;user-select:none;">Con tecnología de búsqueda inmediata</small><br><br>
+       <small style="color: #cccccc;-webkit-user-select: none;-moz-user-select: none;-khtml-user-select: none;-ms-user-select:none;user-select:none;">Con tecnología de búsqueda inmediata</small><br><br>
        <div class="text-h1" id="divh1">
          <h1 id="h1Result"></h1>
        </div>

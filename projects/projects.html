@@ -1,1 +1,113 @@
-<h1>Si funciona xd</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="Index">
+	<title>Matias' Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="shortcut icon" href="..\wp-content\images\assets\img\brand\favicon.ico" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+	 crossorigin="anonymous">
+	</script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+    (function(){
+      emailjs.init("user_6Z3mCm9NiTNUQqYhMfV8E");
+    })();
+</script>
+</head>
+<body style="height: 700px;">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Matias' Portfolio</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+           <a class="nav-link" href="/">Página principal</a>
+         </li>
+         <li class="nav-item dropdown">
+          <div class="btn-group dropend">
+           <a class="nav-link" href="projects/projects.html">
+             Proyectos
+           </a>
+           <a type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+             <span class="visually-hidden">Toggle Dropright</span>
+           </a>
+            <ul class="dropdown-menu">
+             <li><a class="nav-link active" href="projects/dgrafix.html">D'grafix</a></li>
+             <li><a class="nav-link active" href="projects/projects.html">Ver todos <i class="bi bi-chevron-double-right"></i></a></li>
+           </ul>
+          </div>
+        </li>
+         <li class="nav-item">
+           <a class="nav-link" href="../aboutme.html">Sobre mí</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="../contact.html">Contacto</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="../search.html">Buscar</a>
+        </li>
+       </ul>
+       <div class="d-flex">
+        <input class="form-control me-2" id="input" type="search" placeholder="Busca algo..." aria-label="Search">
+        <a href="#" class="btn btn-outline-success" role="button" id="btnFormSubmit">Buscar</a>
+       </div>
+    </div>
+     </div>
+   </div>
+ </nav>
+ <br>
+ <br>
+ <div class="container">
+ <ul id="resultado"></ul>
+</div>
+ <div class="container wrappper">
+   <div class="container-fluid">
+   <h1 class="display-3 my-5">Proyectos</h1>
+   <div class="project-1">
+     <div class="card" style="width: 100%;">
+      <img src="../wp-content/images/assets/img/banners/nathan-da-silva-k-rKfqSm4L4-unsplash.jpg" loading="lazy" class="card-img-top" alt="D'grafix Poster"> <!-- Buscar imagen en PC personal -->
+    <div class="card-body">
+     <h5 class="card-title">D'grafix</h5>
+     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="dgrafix.html" class="btn btn-secondary stretched-link" role="button">Ver más...</a>
+    </div>
+</div>
+</div>
+   </div>
+ </div>
+  <footer>
+   <ul class="nav justify-content-center" style="background:#cccccc;margin-top: 400px;">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Página principal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../aboutme.html">Sobre mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../contact.html">Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../search.html">Buscar</a>
+      </li>
+    </ul>
+     <small class="footer-text" style="text-align:center;"><img class="nav-brand-footer" src="../wp-content/images/assets/img/brand/portfolio-logo.svg" alt="Portfolio Logo" style="width: 40px;"></img> - © 2021 - Esta página tiene la <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="cc-link" target="_blank">licencia de Creative Commons BY-SA 3.0</a>, lo que significa que puedes publicar y remezclar mi contenido.</small>
+   </footer>
+   <script src="../main.js"></script>
+</body>
+</html>
