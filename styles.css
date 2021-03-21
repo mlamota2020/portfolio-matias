@@ -99,11 +99,20 @@ body::-webkit-scrollbar {
   margin-bottom: 50px;
 }
 
+.section-1 div img {
+  position: relative;
+  right: 0;
+  margin-right: 200px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
 .section-text {
   color: #000000;
   width: 30%;
   line-height: 25px;
-  margin-left: 200px;
+  margin: auto;
   padding: 10px;
   background: #ffffff;
   border-radius: 20px;

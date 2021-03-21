@@ -25,7 +25,7 @@
 </script>
 </head>
 <body style="height: 700px;">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-3">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">Matias' Portfolio</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,34 +33,34 @@
      </button>
      <div class="collapse navbar-collapse" id="navbarNavDropdown">
        <ul class="navbar-nav ml-auto">
-         <li class="nav-item">
-           <a class="nav-link" href="/">Página principal</a>
+         <li class="nav-item m-2">
+           <a class="btn btn-outline-secondary" href="/">Página principal</a>
          </li>
-         <li class="nav-item dropdown">
+         <li class="nav-item dropdown m-2">
           <div class="btn-group dropend">
-           <a class="nav-link" href="projects/projects.html">
+           <a class="btn btn-outline-secondary active" aria-current="page" href="projects.html">
              Proyectos
            </a>
-           <a type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-             <span class="visually-hidden">Toggle Dropright</span>
+           <a type="button" class="lol btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropright</span>
            </a>
             <ul class="dropdown-menu">
-             <li><a class="nav-link active" href="projects/dgrafix.html">D'grafix</a></li>
-             <li><a class="nav-link active" href="projects/projects.html">Ver todos <i class="bi bi-chevron-double-right"></i></a></li>
+             <li><a class="nav-link active" href="dgrafix.html">D'grafix</a></li>
+             <li><a class="nav-link active" href="projects.html">Ver todos <i class="bi bi-chevron-double-right"></i></a></li>
            </ul>
           </div>
         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="../aboutme.html">Sobre mí</a>
+         <li class="nav-item m-2">
+           <a class="btn btn-outline-secondary" href="../aboutme.html">Sobre mí</a>
          </li>
-         <li class="nav-item">
-           <a class="nav-link" href="../contact.html">Contacto</a>
+         <li class="nav-item m-2">
+           <a class="btn btn-outline-secondary" href="../contact.html">Contacto</a>
          </li>
-         <li class="nav-item">
-          <a class="nav-link" href="../search.html">Buscar</a>
+         <li class="nav-item m-2">
+          <a class="btn btn-outline-secondary" href="../search.html">Buscar</a>
         </li>
        </ul>
-       <div class="d-flex">
+       <div class="d-flex ms-auto">
         <input class="form-control me-2" id="input" type="search" placeholder="Busca algo..." aria-label="Search">
         <a href="#" class="btn btn-outline-success" role="button" id="btnFormSubmit">Buscar</a>
        </div>
