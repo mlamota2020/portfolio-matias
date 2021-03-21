@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.img-fluid {
+  height: 550px;
+}
+
 body {
   background: #ffffff;
   color: #000000;
@@ -301,7 +305,7 @@ main {
 
 .formulario__label {
 	display: block;
-	font-weight: 100;
+	font-weight: 700;
 	padding: 10px;
 	cursor: pointer;
 }
@@ -314,7 +318,7 @@ main {
 	width: 100%;
 	background: #fff;
 	border: 3px solid #cccccc;
-	border-radius: 10px;
+	border-radius: 20px;
 	height: 45px;
 	line-height: 45px;
 	padding: 0 40px 0 10px;
@@ -322,7 +326,7 @@ main {
 }
 
 .formulario__input:focus {
-	border: 3px solid #2079ff;
+	border: 3px solid #0075FF;
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
@@ -383,9 +387,9 @@ main {
 	height: 45px;
 	line-height: 45px;
 	width: 30%;
-	background: #cccccc;
-	color: #000000;
-	font-weight: 6;
+	background: #ccc;
+	color: #000;
+	font-weight: bold;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
