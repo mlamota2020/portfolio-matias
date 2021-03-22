@@ -6,6 +6,10 @@ html {
   height: 550px;
 }
 
+.list {
+  margin-top: 20px; 
+}
+
 body {
   background: #ffffff;
   color: #000000;
