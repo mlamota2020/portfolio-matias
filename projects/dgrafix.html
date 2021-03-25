@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="robots" content="Index">
-	<title>Matias' Portfolio</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-	<link rel="stylesheet" href="../styles.css">
-	<link rel="shortcut icon" href="..\wp-content\images\assets\img\brand\favicon.ico" type="image/x-icon">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-	 crossorigin="anonymous">
-	</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="Index">
+<title>Matias' Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="../styles.css">
+<link rel="shortcut icon" href="..\wp-content\images\assets\img\brand\favicon.ico" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
   <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-   </script>
-   <script type="text/javascript">
-    (function(){
+     src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+  	</script>
+  	<script type="text/javascript">
+      (function(){
       emailjs.init("user_6Z3mCm9NiTNUQqYhMfV8E");
-    })();
-</script>
+      })();
+  </script>
 </head>
 <body style="height: 700px;">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-3">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Matias' Portfolio</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Matias' Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
      <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -63,7 +60,10 @@
    <div class="container-fluid">
    <h1 class="display-3 my-5">D'grafix - #1</h1>
    <div class="project">
-     <img src="../wp-content/images/assets/img/projects/dgrafixphoto.JPG" class="img-fluid" alt="D'grafix" title="D'grafix" data-bs-toggle="tooltip" data-bs-placement="right">
+     <figure class="figure">
+       <img src="../wp-content/images/assets/img/projects/dgrafixphoto.JPG" class="img-fluid rounded" alt="D'grafix" title="D'grafix" data-bs-toggle="tooltip" data-bs-placement="right">
+       <figcaption class="figure-caption text-end">Screenshot de la primera parte de la página.</figcaption>
+    </figure>
     <div class="card text-center mt-2">
   <div class="card-body">
     <h5 class="card-title">D'grafix</h5>
@@ -80,15 +80,26 @@
     <p class="card-text">La página sería sencila con un fondo de mosaico estático. El problema es que no se nos ocurría como se vería. Llegó un punto en el que se nos ocurrió agregar al principio  navegación casi transparente con cada una de las páginas. Además, después le agregamos un, como le llamamos "showcase", el cual contendría un texto de bienvenida con un párrafo pequeño. Sigue con 4 cartas de noticias hechas con "CSS Grid", y después un cartel con un encabezado y un texto. A esto le sigue otras 4 cartas de "CSS Grid" y otro cartel. Después de lo agregado, un pié de página sencillo termina la página. Además, todo (a excepción de el pié de página) está dentro de un contenedor.</p>
   </div>
 </div>
-<!--Aquí va a ir una foto con un <blockquote>-->
+<!-- Aquí va a ir una foto con un <figure> -->
 <div class="card m-5">
   <div class="card-body">
     <h5 class="card-title">La pregunta: "¿Será interactiva?"</h5>
-    <p class="card-text">La página no contiene tanto JavaScript que piense. En realidad, solo tiene unas 10 líneas de código. Si, solo "10 lineas de código". En realida no tiene tanta interactividad, y solo se lo usa para el Responsive Design y para el uso de uns librería Javascript llamada <a href="https://scrollrevealjs.org/" target="_blank">"ScrollReveal"</a>, el cual permite ir "revelando", como lo dice el nombre, los elementos definiendolos por su clase. Pero no nos desviemos del tema. En teoría, la página esrá quedando perfecta, pero le falta esa interactividad para hacerla más dinámica. Espero que pronto se la pueda hacer mucho más dinámica y que sea más interactiva.</p>
+    <p class="card-text">La página no contiene tanto JavaScript que piense. En realidad, solo tiene unas 10 líneas de código. Si, solo "10 lineas de código". En realida no tiene tanta interactividad, y solo se lo usa para el Responsive Design y para el uso de una librería Javascript llamada <a href="https://scrollrevealjs.org/" target="_blank">"ScrollReveal"</a>, el cual permite ir "revelando", como lo dice el nombre, los elementos definiendolos por su clase. Pero no nos desviemos del tema. En teoría, la página esrá quedando perfecta, pero le falta esa interactividad para hacerla más dinámica. Espero que pronto se la pueda hacer mucho más dinámica y que sea más interactiva.</p>
   </div>
 </div>
-<div class="ss-h1 display-3">Screenshots</div>
-<!--Aquí van a ir fotos con un <blockquote>-->
+<h1 class="ss-h1 display-3">Screenshots</h1>
+    <figure class="figure mb-5">
+       <img src="../wp-content/images/assets/img/projects/dgrafix-1.png" class="img-fluid rounded">
+       <figcaption class="figure-caption rounded text-end">Screenshot de un cartel de la página principal.</figcaption>
+    </figure>
+    <figure class="figure mb-5">
+       <img src="../wp-content/images/assets/img/projects/dgrafix-2.png" class="img-fluid rounded">
+       <figcaption class="figure-caption rounded">Screenshot del "showcase" de la página.</figcaption>
+    </figure>
+    <figure class="figure mb-5">
+       <img src="../wp-content/images/assets/img/projects/dgrafix-3.png" class="img-fluid rounded">
+       <figcaption class="figure-caption rounded text-end">Screenshot de las tarjetas con "CSS Grid".</figcaption>
+    </figure>
 <div class="next-project text-end m-5">
      <a href="#" class="btn btn-secondary" role="button">Ver el siguiente projecto <i class="bi bi-chevron-right"></i></a>
    </div>
@@ -112,7 +123,7 @@
         <a class="nav-link active" aria-current="page" href="../search.html">Buscar</a>
       </li>
     </ul>
-     <small class="footer-text" style="text-align:center;"><img class="nav-brand-footer" src="../wp-content/images/assets/img/brand/portfolio-logo.svg" alt="Portfolio Logo" style="width: 40px;"></img> - © 2021 - Esta página tiene la <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="cc-link" target="_blank">licencia de Creative Commons BY-SA 3.0</a>, lo que significa que puedes publicar y remezclar mi contenido.</small>
+     <small class="footer-text"><img class="nav-brand-footer" src="../wp-content/images/assets/img/brand/portfolio-logo.svg" alt="Portfolio Logo" style="width: 40px;"></img> - © 2021 - Esta página tiene la <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="cc-link" target="_blank">licencia de Creative Commons BY-SA 3.0</a>, lo que significa que puedes publicar y remezclar mi contenido.</small>
    </footer>
   <script>
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

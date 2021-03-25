@@ -56,38 +56,17 @@ formulary.addEventListener('input', () => {
 
 formulary.addEventListener('input', filter);
 
-// Ejecución correcta del formulario
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-
 // Envío de recibo a contacto
 
-const formv = document.querySelector('#validationTooltip05')
-const form = document.querySelector('#btn');
-const namem = document.querySelector('#validationTooltip01');
+const formv = document.querySelector('.email-form')
+const form = document.querySelector('.btn-email');
+const namem = document.querySelector('.name-form');
 
-form.addEventListener('click', sendEmail);
+form.addEventListener('click', addSpinnerAndEmail);
 
-function sendEmail() {
+function addSpinnerAndEmail() {
+  form.classList.add('disabled')
+  form.innerHTML += `<span class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true"></span>`
   emailjs.send('service_gmail', 'template_portfolio', { to_email: formv.value, to_name: namem.value, userID: 'user_6Z3mCm9NiTNUQqYhMfV8E' })
     .then(function (response) {
       console.log('SUCCESS!', response.status, response.text);
