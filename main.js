@@ -1,60 +1,75 @@
-// Scripts de búsqueda con indexOf
+window.onload = () => {
+  // Scripts de búsqueda con indexOf
+  const result = document.querySelector('#resultado');
+  const divH1 = document.querySelector('#divh1');
 
-const formulary = document.querySelector('#input');
-const result = document.querySelector('#resultado');
-const divH1 = document.querySelector('#divh1');
+  let links = [{
+      nombre: 'Página principal',
+      link: 'index.html',
+      href: 'Págína principal',
+      text: '¡Hola! Bienvenido. Siéntete cómodo de estar aquí, te tenemos una sorpresa para tí...'
+    },
+    {
+      nombre: 'Sobre mí',
+      link: 'aboutme.html',
+      href: 'Sobre mí',
+      text: '¿Quieres saber un poco de mí? Pues mira esta página en la que te cuento un poco de mí y de como conocí la programación!'
+    }, // Pendiente el texto
+    {
+      nombre: 'Contacto',
+      link: 'contact.html',
+      href: 'Contacto',
+      text: 'Rellene el siguiente formulario para ser respondido y ayudarle. Nuestro servicio se extiende por todo el Ecuador.'
+    },
+    {
+      nombre: 'Proyectos',
+      link: 'projects/projects.html',
+      href: 'Proyectos',
+      text: 'He trabajado en algunos proyectos con otras personas. Entra aquí para ver esos trabajos.'
+    }, // Pendiente el texto
+    {
+      nombre: 'D-grafix',
+      link: 'projects/dgrafix.html',
+      href: 'Proyectos <i class="bi bi-arrow-right"></i> D-grafix',
+      text: 'D-grafix es una empresa de diseño gráfico dispuesta a ayudar a las personas.'
+    } // Pendiente el texto
+  ]
 
-let links = [
-  {
-    nombre: 'Página principal',
-    link: 'index.html',
-    href: 'Págína principal',
-    text: '¡Hola! Bienvenido. Siéntete cómodo de estar aquí, te tenemos una sorpresa para tí...'
-  },
-  {
-    nombre: 'Sobre mí',
-    link: 'aboutme.html',
-    href: 'Sobre mí'
-  }, // Pendiente el t
-  {
-    nombre: 'Contacto',
-    link: 'contact.html',
-    href: 'Contacto',
-    text: 'Rellene el siguiente formulario para ser respondido y ayudarle. Nuestro servicio se extiende por todo el Ecuador.'
-  },
-  {
-    nombre: 'Proyectos',
-    link: 'projects/projects.html',
-    href: 'Proyectos'
-  }, // Pendiente el texto
-  {
-    nombre: 'D-grafix',
-    link: 'projects/dgrafix.html',
-    href: 'Proyectos | D-grafix'
-  } // Pendiente el texto
-]
+  const filter = () => {
+    result.innerHTML = '';
+    const parameters = new URL(location.href);
+    const text = parameters.searchParams.get("s").toLowerCase();
 
-const filter = () => {
-  result.innerHTML = '';
-  const text = formulary.value.toLowerCase();
+    for (let link of links) {
+      const nombre = link.nombre.toLowerCase();
+      if (nombre.indexOf(text) !== -1) {
+        result.innerHTML += `<li><i class="bi bi-search" style="margin-right:10px;"></i><span class="link-text"><a href="${link.link}">${link.nombre} -</span> <code>${link.href}</code></a><br><p class="lead mt-1 text-truncate" style="font-size:15px;max-width:350px;">${link.text || ''}</p></li>`
+      }
+    }
 
-  for (let link of links) {
-    let nombre = link.nombre.toLowerCase();
-    if (nombre.indexOf(text) !== -1) {
-      result.innerHTML += `<li><i class="bi bi-search" style="margin-right:10px;"></i><a href="${link.link}">${link.nombre} - ${link.href}</a><br><p class="lead mt-1 text-truncate" style="font-size:15px;max-width:350px;">${link.text}</p></li>`
+    if (result.innerHTML === '') {
+      result.innerHTML +=
+        `<li>No se han encontrado resultados...</li>`
     }
   }
-  if (result.innerHTML === '') {
-    result.innerHTML +=
-      `<li>No se han encontrado resultados...</li>`
+
+  formulary.addEventListener('input', () => {
+    document.querySelector('#divh1').innerHTML += `<h1 class="display-6 my-5">Resultados para <mark>${formulary.value}</mark>:</h1>`
+  });
+
+  filter();
+
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
   }
-}
 
-formulary.addEventListener('input', () => {
-  document.querySelector('#divh1').innerHTML = `<h1 class="display-6 my-5">Resultados para <mark>${formulary.value}</mark>:</h1>`
-});
-
-formulary.addEventListener('input', filter);
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+};
 
 // Envío de recibo a contacto
 

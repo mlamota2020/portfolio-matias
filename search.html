@@ -12,54 +12,64 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+    (function(){
+      emailjs.init("user_6Z3mCm9NiTNUQqYhMfV8E");
+    })();
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous">
 </head>
-<body style="height: 700px;">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-3">
+<body onload="myFunction()">
+	<nav class="navbar navbar-expand-lg navbar-light bg-body sticky-top p-4">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">Matias' Portfolio</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
-     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-       <ul class="navbar-nav ml-auto">
-         <li class="nav-item m-2">
-           <a class="nav-link" href="index.html">Página principal</a>
+     <div class="collapse navbar-collapse bg-light rounded" id="navbarNavDropdown">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link my-lg-2 link" href="index.html"><span data-content="Página principal">Página principal</span></a>
          </li>
-         <li class="nav-item dropdown m-2">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Proyectos
+         <li class="nav-item dropdown">
+          <a class=" nav-link my-lg-2 dropdown-toggle link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span data-content="Proyectos">Proyectos</span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="projects/dgrafix.html">D'grafix</a></li>
             <li><a class="dropdown-item" href="projects/projects.html">Ver todos <i class="bi bi-chevron-double-right"></i></a></li>
           </ul>
         </li>
-         <li class="nav-item m-2">
-           <a class="nav-link" href="aboutme.html">Sobre mí</a>
+         <li class="nav-item">
+           <a class=" nav-link my-lg-2 link" href="aboutme.html"><span data-content="Sobre mí">Sobre mí</span></a>
          </li>
-         <li class="nav-item m-2">
-           <a class="nav-link" href="contact.html">Contacto</a>
+         <li class="nav-item">
+           <a class=" nav-link my-lg-2 link" href="contact.html"><span data-content="Contacto">Contacto</span></a>
          </li>
-         <li class="nav-item m-2">
-          <a class="nav-link active" aria-current="page" href="search.html">Buscar</a>
-        </li>
        </ul>
        <div class="d-flex ms-auto">
         <input class="form-control me-2" id="input" type="search" placeholder="Busca algo..." aria-label="Search">
-        <a href="#" class="btn btn-outline-success" role="button" id="btnFormSubmit">Buscar</a>
+        <a href="#" class="btn btn-outline-success me-2" role="button" id="btnFormSubmit">Buscar</a>
        </div>
-    </div>
-     </div>
-   </div>
  </nav>
-   <div class="container mt-5" id="formContainer">
-       <h1 class="display-3 my-5">Inserte su búsqueda:</h1>
-       <input type="text" class="form-control" placeholder="Búsqueda" id="input">
-       <small style="color: #cccccc;-webkit-user-select: none;-moz-user-select: none;-khtml-user-select: none;-ms-user-select:none;user-select:none;">Con tecnología de búsqueda inmediata</small><br><br>
-       <div class="text-h1" id="divh1">
-         <h1 id="h1Result"></h1>
-       </div>
-       <ul id="resultado"></ul>
+   <div class="container results">
+      <div class="content">
+        <div class="hero my-5" id="divh1">
+          <div class="principal text-center">
+            <h1 class="mt-5">Búsqueda</h1>
+            <small class="mb-5" disabled style="color:#cccccc;user-select:none;">Con tecnología de búsqueda rápida</small>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 search">
+        <div class="container">
+          <h1 class="display-6 my-5">Resultados de la búsqueda:</h1>
+          <ul id="resultado" class="shadow-lg animate__animated animate__fadeIn"></ul>
+        </div>  
+      </div>
    </div>
   <footer>
    <ul class="nav justify-content-center" style="background:#cccccc;margin-top: 400px;">
@@ -79,8 +89,79 @@
         <a class="nav-link active" aria-current="page" href="search.html">Buscar</a>
       </li>
     </ul>
-     <small class="footer-text" style="text-align:center;"><img class="nav-brand-footer" src="wp-content/images/assets/img/brand/portfolio-logo.svg" alt="Portfolio Logo"></img> - © 2021 - Esta página tiene la <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="cc-link" target="_blank">licencia de Creative Commons BY-SA 3.0</a>, lo que significa que puedes publicar y remezclar mi contenido.</small>
+     <small class="footer-text" style="text-align:center;"><img class="nav-brand-footer" src="wp-content/images/assets/img/brand/portfolio-logo.svg" alt="Por"></img> - © 2021 - Esta página tiene la <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="cc-link" target="_blank">licencia de Creative Commons BY-SA 3.0</a>, lo que significa que puedes publicar y remezclar mi contenido.</small>
    </footer>
+    <script>
+  // Scripts de búsqueda con indexOf
+
+const formulary = document.querySelector('#input');
+const result = document.querySelector('#resultado');
+const divH1 = document.querySelector('#divh1');
+
+let links = [
+  {
+    nombre: 'Página principal',
+    link: 'index.html',
+    href: 'Págína principal',
+    text: '¡Hola! Bienvenido. Siéntete cómodo de estar aquí, te tenemos una sorpresa para tí...'
+  },
+  {
+    nombre: 'Sobre mí',
+    link: 'aboutme.html',
+    href: 'Sobre mí'
+  }, // Pendiente el texto
+  {
+    nombre: 'Contacto',
+    link: 'contact.html',
+    href: 'Contacto',
+    text: 'Rellene el siguiente formulario para ser respondido y ayudarle. Nuestro servicio se extiende por todo el Ecuador.'
+  },
+  {
+    nombre: 'Proyectos',
+    link: 'projects/projects.html',
+    href: 'Proyectos'
+  }, // Pendiente el texto
+  {
+    nombre: 'D-grafix',
+    link: 'projects/dgrafix.html',
+    href: 'Proyectos | D-grafix'
+  } // Pendiente el texto
+]
+
+const filter = () => {
+  result.innerHTML = '';
+  const text = formulary.value.toLowerCase();
+
+  for (let link of links) {
+    let nombre = link.nombre.toLowerCase();
+    if (nombre.indexOf(text) !== -1) {
+      result.innerHTML += `<li><i class="bi bi-search" style="margin-right:10px;"></i><a href="${link.link}">${link.nombre} - ${link.href}</a><br><p class="lead mt-1 text-truncate" style="font-size:15px;max-width:350px;">${link.text}</p></li>`
+    }
+  }
+  if (result.innerHTML === '') {
+    result.innerHTML +=
+      `<li>No se han encontrado resultados...</li>`
+  }
+}
+
+formulary.addEventListener('input', () => {
+  document.querySelector('#divh1').innerHTML += `<h1 class="display-6 my-5">Resultados para <mark>${text.value}</mark>:</h1>`
+});
+
+filter();
+
+var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
    <script src="main.js"></script>
+ </div>
 </body>
 </html>
