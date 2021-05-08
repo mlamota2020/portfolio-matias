@@ -6,7 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="Index">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P5H2Z9T');</script>
+  <!-- End Google Tag Manager -->
   <title>Matias' Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" href="wp-content/images/assets/img/brand/portfolio-logo.svg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 	<link rel="stylesheet" href="styles.css">
@@ -22,28 +31,32 @@
    </script>
    <script type="text/javascript">
     (function(){
-      emailjs.init("user_6Z3mCm9NiTNUQqYhMfV8E");
+      emailjs.init("user_6Z3m CVCm9NiTNUQqYhMfV8E");
     })();
 </script>
 <style>
   @media (min-width: 768px) {
     .col-md-5 {
-      margin-left: 10rem !important;
+      margin-left: 20rem!important;
     }
   }
 </style>
 </head>
-<body id="all" class="_HuijHU5gh89gd769 _UH89ke body">
+<body id="all" class="_HuijHU5gh89gd769 _UH89ke body" onoffline="offline()" ononline="online()">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5H2Z9T"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-body sticky-top p-4">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Matias' Portfolio</a>
+			<a class="navbar-brand" href="#"><img src="wp-content/images/assets/img/brand/portfolio-logo.svg" style="width:50px;" alt="Logo" class="me-3"> Matias' Portfolio</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
-     <div class="collapse navbar-collapse bg-light rounded" id="navbarNavDropdown">
-       <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+     <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+       <ul class="navbar-nav navbar-nav-scroll ms-auto" style="--bs-scroll-height: 1000px;">
          <li class="nav-item">
-           <a class="nav-link my-lg-2 active link" aria-current="page" href="index.html"><span data-content="Página principal">Página principal</span></a>
+           <a class="nav-link my-lg-2 active link" href="/" aria-current="page"><span data-content="Página principal">Página principal</span></a>
          </li>
          <li class="nav-item dropdown">
           <a class=" nav-link my-lg-2 dropdown-toggle link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,24 +74,9 @@
            <a class=" nav-link my-lg-2 link" href="contact.html"><span data-content="Contacto">Contacto</span></a>
          </li>
        </ul>
-       <div class="d-flex ms-auto">
-       <form action="search.html" class="d-flex ms-auto">
-        <input class="form-control me-2" id="input" name="s" type="search" placeholder="Busca algo..." aria-label="Search">
-        <button class="btn btn-outline-success me-2" type="submit">Buscar</button>
-        </form>
-       </div>
  </nav>
-    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
-  <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <strong class="me-auto"><i class="bi bi-info-circle"></i> Recordatorio</strong>
-      <small>justo ahora</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-      <i class="bi bi-info-circle"></i> Para ver la página optimizada, usa Chrome v60 en adelante, Firefox v60 en adelante, iOS 10 en adelante, Safari v10 en adelante, y Android 6 en adelante. La página no funciona correctamente en Internet Explorer.
-    </div>
-  </div>
+<div class="position-fixed bottom-0 start-0 p-3" style="z-index: 5;">
+  <div id="offline" style="display:block;"></div>
 </div>
     <div class="presentation-section">
     <div class="ccontainer">
@@ -92,7 +90,7 @@
         <img src="wp-content/images/assets/img/parallax-img/js.png" class="object" data-value="5">
     </div>
     </div>
-   <section class="my-5 ms-1 pb-md-4 align-items-center">
+   <section class="my-5 ms-1 pb-md-4 align-items-center py-5">
     <div class="col-md-5 ms-2 ms-sm-0 ms-md-2">
       <div class="masthead-followup-icon d-inline-block mb-2 text-white bg-secondary">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="32" height="32" viewBox="0 0 115.879598 128.961753" preserveAspectRatio="xMidYMid meet">
@@ -107,12 +105,12 @@
         </svg>
       </div>
       <h2 class="display-5 fw-normal">¡Bienvenido!</h2>
-      <p class="lead fw-normal text-muted">
+      <p class="lead fw-normal">
         <b>Hola!</b> Bienvenido a mi portafolio. Aquí encontrarás todos mis trabajos.
       </p>
-      <p>Estoy especializado en el front-end y me gusta crear cosas sencillas, pero que vayan al grano. Si me deseas contactar, puedes ir a la página <a href="#">Contacto</a>.</p>
+      <p class="text-muted">Estoy especializado en el front-end y me gusta crear cosas sencillas, pero que vayan al grano. Si me deseas contactar, puedes ir a la página <a href="contact.html">Contacto</a>.</p>
       <a class="link link--arrowed" href="projects/projects.html">Ver los trabajos<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-            <g fill="none" stroke="#2175FF" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+            <g fill="none" stroke="#2079FF" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
                 <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
                 <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
             </g>
@@ -145,82 +143,51 @@
          </div>
          </div>
 </div>
-  <footer>
-   <ul class="nav justify-content-center" style="background:#cccccc;">
-      <li class="nav-item">
-        <a class=" nav-link my-lg-2 active gh" aria-current="page" target="_blank" href="https://github.com/mlamota2020"><i class="fab fa-github text-secondary gh" style="font-size: 50px;"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class=" nav-link my-lg-2 da" target="_blank" href="https://www.deviantart.com/mlamota2020"><i class="fab fa-deviantart text-secondary da" style="font-size: 50px;"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class=" nav-link my-lg-2 so" target="_blank" href="https://es.stackoverflow.com/users/208585/matias-la-mota"><i class="fab fa-stack-overflow text-secondary so" style="font-size: 50px;"></i></a>
-      </li>
-    </ul>
-     <small class="footer-text" style="text-align:center;"><img class="nav-brand-footer" src="wp-content/images/assets/img/brand/portfolio-logo.svg" alt="Portfolio Logo"></img> - © 2021 - Esta página tiene la <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="cc-link" target="_blank">licencia de Creative Commons BY-SA 3.0</a>, lo que significa que puedes publicar y remezclar mi contenido.</small>
-   </footer>
+  <div class="footer-links">
+       <div class="footer-container">
+           <ul>
+               <li>
+                  <a href="/">
+                   <h5 class="title">Página principal</h5>
+                  </a>
+               </li>
+             </ul>
+             <ul>
+                <li>
+                   <a href="projects/projects.html">
+                    <h5 class="title">Proyectos</h5>
+                   </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                   <a href="aboutme.html">
+                    <h5 class="title">Sobre mí </h5>
+                   </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                   <a href="contact.html">
+                    <h5 class="title">Contacto</h5>
+                   </a>
+                </li>
+              </ul>
+       </div>
+    </div>
+    <footer class="footer">
+        <h6>©2021 Matias' Portfolio</h6>
+    </footer>
+    <div class="cookies-advice position-fixed bottom-0 start-0 m-3 shadow-lg text-center" id="cookiesAdvice" style="z-index: 1000001;">
+      <img class="cookie" src="cookies.svg" alt="Cookie">
+      <h3>Aviso de cookies</h3>
+      <p class="p-cookies">Utilizamos cookies propias y de terceros para mejorar la experiencia de uso.</p>
+      <button class="accept-cookies btn btn-secondary d-block w-100" id="acceptCookies">De acuerdo</button>
+    </div>
+    <div class="backdrop-cookies" id="backdropCookies"></div>
    <script src="main.js"></script>
    <script src="js/app.js"></script>
-   <script src="plugins/particles.js"></script>
+   <script src="cookies.js"></script>
    <script src="plugins/app.js"></script>
- <script>
-   // Scripts de búsqueda con indexOf
-
-const formulary = document.querySelector('#input');
-const result = document.querySelector('#resultado');
-const divH1 = document.querySelector('#divh1');
-
-let links = [
-  {
-    nombre: 'Página principal',
-    link: 'index.html',
-    href: 'Págína principal',
-    text: '¡Hola! Bienvenido. Siéntete cómodo de estar aquí, te tenemos una sorpresa para tí...'
-  },
-  {
-    nombre: 'Sobre mí',
-    link: 'aboutme.html',
-    href: 'Sobre mí'
-  }, // Pendiente el texto
-  {
-    nombre: 'Contacto',
-    link: 'contact.html',
-    href: 'Contacto',
-    text: 'Rellene el siguiente formulario para ser respondido y ayudarle. Nuestro servicio se extiende por todo el Ecuador.'
-  },
-  {
-    nombre: 'Proyectos',
-    link: 'projects/projects.html',
-    href: 'Proyectos'
-  }, // Pendiente el texto
-  {
-    nombre: 'D-grafix',
-    link: 'projects/dgrafix.html',
-    href: 'Proyectos | D-grafix'
-  } // Pendiente el texto
-]
-
-const filter = () => {
-  result.innerHTML = '';
-  const text = formulary.value.toLowerCase();
-
-  for (let link of links) {
-    let nombre = link.nombre.toLowerCase();
-    if (nombre.indexOf(text) !== -1) {
-      result.innerHTML += `<li><i class="bi bi-search" style="margin-right:10px;"></i><a href="${link.link}">${link.nombre} - ${link.href}</a><br><p class="lead mt-1 text-truncate" style="font-size:15px;max-width:350px;">${link.text}</p></li>`
-    }
-  }
-  if (result.innerHTML === '') {
-    result.innerHTML +=
-      `<li>No se han encontrado resultados...</li>`
-  }
-}
-
-formulary.addEventListener('input', () => {
-  document.querySelector('#divh1').innerHTML += `<h1 class="display-6 my-5">Resultados para <mark>${formulary.value}</mark>:</h1>`
-});
-
-filter();
- </script>
 </body>
 </html>

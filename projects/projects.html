@@ -6,12 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="Index">
 	<title>Matias' Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 	<link rel="stylesheet" href="../styles.css">
 	<link rel="shortcut icon" href="..\wp-content\images\assets\img\brand\favicon.ico" type="image/x-icon">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" />
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
    </script>
@@ -21,20 +24,20 @@
     })();
 </script>
 </head>
-<body style="height: 700px;">
+<body style="height: 700px;" onoffline="offline()" ononline="online()">
 	<nav class="navbar navbar-expand-lg navbar-light bg-body sticky-top p-4">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Matias' Portfolio</a>
+			<a class="navbar-brand" href="#"><img src="../wp-content/images/assets/img/brand/portfolio-logo.svg" style="width:50px;" alt="Logo" class="me-3"> Matias' Portfolio</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
-     <div class="collapse navbar-collapse bg-light rounded" id="navbarNavDropdown">
-       <ul class="navbar-nav">
+     <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+       <ul class="navbar-nav navbar-nav-scroll ms-auto" style="--bs-scroll-height: 1000px;">
          <li class="nav-item">
-           <a class="nav-link my-lg-2 link" href="index.html"><span data-content="Página principal">Página principal</span></a>
+           <a class="nav-link my-lg-2 link" href="/"><span data-content="Página principal">Página principal</span></a>
          </li>
          <li class="nav-item dropdown">
-          <a class=" nav-link my-lg-2 dropdown-toggle active link" aria-current="page" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class=" nav-link my-lg-2 dropdown-toggle link active" aria-current="page" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span data-content="Proyectos">Proyectos</span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -43,29 +46,36 @@
           </ul>
         </li>
          <li class="nav-item">
-           <a class=" nav-link my-lg-2 link" href="aboutme.html"><span data-content="Sobre mí">Sobre mí</span></a>
+           <a class=" nav-link my-lg-2 link" href="../aboutme.html"><span data-content="Sobre mí">Sobre mí</span></a>
          </li>
          <li class="nav-item">
-           <a class=" nav-link my-lg-2 link" href="contact.html"><span data-content="Contacto">Contacto</span></a>
+           <a class=" nav-link my-lg-2 link" href="../contact.html"><span data-content="Contacto">Contacto</span></a>
          </li>
        </ul>
  </nav>
- <br>
- <br>
- <div class="container">
- <ul id="resultado"></ul>
+<div class="position-fixed bottom-0 start-0 p-3" style="z-index: 5;">
+  <div id="offline" style="display:block;"></div>
 </div>
  <div class="container wrappper">
    <div class="container-fluid">
    <h1 class="display-3 my-5">Proyectos</h1>
-   <div class="project-1">
-     <div class="card" style="width: 100%;">
+   <div class="project-1 mb-5">
+     <div class="card mb-5" style="width: 100%;">
        <img src="../wp-content/images/assets/img/projects/dgrafixphoto.JPG" loading="lazy" class="card-img-top rounded" alt="D'grafix Poster">
-     </div>
     <div class="card-body">
      <h5 class="card-title">D'grafix</h5>
      <p class="card-text">D'grafix es una empresa de diseño gráfico dispuesta a ayudar a las personas.</p>
       <a href="dgrafix.html" class="btn btn-secondary stretched-link" role="button">Ver más...</a>
+    </div>
+</div>
+<div class="project-2 mb-5">
+     <div class="card" style="width: 100%;">
+       <img src="../wp-content/images/assets/img/projects/fgalleryposter.png" loading="lazy" class="card-img-top rounded" alt="D'grafix Poster">
+    <div class="card-body">
+     <h5 class="card-title">FGallery</h5>
+     <p class="card-text">FGallery, el servicio de almacenamiento a la nube de imágenes, fotos y videos más completo de todos.</p>
+      <a href="fgallery.html" class="btn btn-secondary stretched-link" role="button">Ver más...</a>
+    </div>
     </div>
 </div>
 </div>
@@ -91,5 +101,6 @@
     </ul>
      <small class="footer-text" style="text-align:center;"><img class="nav-brand-footer" src="../wp-content/images/assets/img/brand/portfolio-logo.svg" alt="Portfolio Logo" style="width: 40px;"></img> - © 2021 - Esta página tiene la <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="cc-link" target="_blank">licencia de Creative Commons BY-SA 3.0</a>, lo que significa que puedes publicar y remezclar mi contenido.</small>
    </footer>
+<script src="../main.js"></script>
 </body>
 </html>

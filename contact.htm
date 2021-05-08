@@ -133,7 +133,7 @@
 
 </style>
 </head>
-<body style="height: 700px;" onload="myFunction()" onoffline="offline()" ononline="online()">
+<body style="height: 700px;" onload="myFunction()">
   <div id="loader" style="overflow: hidden;">
     <div class="sk-chase">
       <div class="sk-chase-dot"></div>
@@ -172,17 +172,26 @@
            <a class=" nav-link my-lg-2 link active" aria-current="page" href="contact.html"><span data-content="Contacto">Contacto</span></a>
          </li>
        </ul>
+       <div class="d-flex">
+       <form action="search.html" class="d-flex">
+        <input class="form-control me-2" id="input" name="s" type="search" placeholder="Busca algo..." aria-label="Search">
+        <button class="hvr-sweep-to-right me-2 button btn-outline-primary" type="submit">Buscar</button>
+        </form>
+       </div>
  </nav>
 <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 5;">
   <div id="offline" style="display:block;"></div>
 </div>
    <div class="container" id="formContainer">
        <h1 class="display-3 mb-5">Contacto</h1>
-<div class="content">
-        <div class="contact-wrapper animate__animated animate__fadeInUp">
+<div class="content animate__animated animate__fadeInUp">
+          <div class="alert alert-success my-3 text-center" style="user-select: none;">
+            <i class="bi bi-check me-auto"></i> La información a sido enviada con éxito.
+          </div>
+        <div class="contact-wrapper">
             <div class="contact-form">
 
-                <form action="contact.htm?redirect=true&contactservice=success" class="contact">
+                <form action="contact.htm" class="contact">
                     <p>
                         <label>Nombre completo</label>
                         <input type="text" name="fullname" class="name-form">
